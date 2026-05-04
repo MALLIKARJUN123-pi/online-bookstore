@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Books</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <h2>Manage Books</h2>
+    <div id="navLinks"></div>
+</nav>
+
+<div class="container">
+
+    <div class="form-box">
+        <h2>Add / Edit Book</h2>
+
+        <input type="hidden" id="bookId">
+
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="author" placeholder="Author">
+        <input type="text" id="description" placeholder="Description">
+        <input type="number" id="price" placeholder="Price">
+        <input type="text" id="imageUrl" placeholder="Image URL">
+        <input type="number" id="stock" placeholder="Stock">
+
+        <button onclick="saveBook()">Save Book</button>
+    </div>
+
+    <h2>All Books</h2>
+    <div id="adminBookList"></div>
+
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
+</html>
